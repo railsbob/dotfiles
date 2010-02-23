@@ -1,0 +1,20 @@
+[github]
+	user = railsbob
+	token = mygithubtoken
+[user]
+	name = Anup Narkhede
+	email = anupnarkhede@gmail.com
+
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+[pager]
+	status = true
+	show-branch = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+[format]
+	numbered = auto

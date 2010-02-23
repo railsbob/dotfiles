@@ -1,0 +1,74 @@
+alias locate=mdfind # uses spotlight to search
+alias e=mate
+alias tm=mate
+
+alias top="top -ocpu"
+alias fsizes="du -h -d 0 ./*"
+
+alias ..="cd .."
+alias ...="cd .. && cd .."
+alias ....="cd .. && cd .. && cd .."
+
+# ls
+alias ls='ls -alFG'
+alias ll='ls -alFG'
+
+alias pwgen='dd if=/dev/urandom count=1 bs=48 2>/dev/null|uuencode -m -|tail -2|head -1'
+
+# show difference between the HEAD and the index
+alias staged="git diff --cached"
+
+# show difference between working tree and the index
+alias unstaged="git diff"
+
+alias r="rake"
+alias gdi="git diff"
+alias gb="git branch -v"
+alias gba="git branch -av"
+alias gs="git status"
+alias gst="git status"
+alias gpr="git pull --rebase"
+alias gco="git checkout"
+alias gcm="git checkout master"
+alias gci="git commit -v"
+alias gam="git commit -v --amend"
+alias grb="git rebase -i HEAD~10"
+alias gcia="git commit -a -v"
+alias gitrmall='git ls-files --deleted|xargs git rm'
+
+alias watchr='watchr ~/p/active/dotfiles/rspec/watchr.rb'
+alias kick_watchr="ps -ef|grep '[w]atchr'|awk '{print $2}'|xargs kill -s INT"
+alias rails3.0="ruby -rubygems /Users/railsbob/workspace/rails3/railties/bin/rails"
+alias rails3="ruby -rubygems /Users/railsbob/workspace/rails3/railties/bin/rails"
+alias rc='./script/rails console'
+alias rg='./script/rails g'
+alias rs='./script/rails server'
+alias ss='./script/server'
+alias sc='./script/console'
+alias sg='./script/generate'
+alias sp='./script/plugin'
+
+# cucumber
+alias cuc='./bin/cucumber'
+alias cuc_wip='./bin/cucumber -p wip'
+alias cuc_all='./bin/cucumber -p all'
+
+# redis
+alias redis_start="/usr/bin/redis-server"
+
+# mongodb
+alias mongo_start="./usr/local/mongo/bin/mongod --dbpath /var/db/mongodb"
+
+export ORIGPATH=$PATH
+alias ruby187='export PATH=~/.multiruby/install/1.8.7-p249/bin:$ORIGPATH'
+# multiruby_setup mri:tar:1.9.1
+alias ruby19='export PATH=~/.multiruby/install/1.9.1-p378/bin:$ORIGPATH'
+alias mroff='export PATH=$ORIGPATH'
+
+# my default ruby from now on
+export PATH=~/.multiruby/install/1.8.7-p249/bin:$PATH
+
+# MongoDB
+export PATH=/usr/local/mongo/bin:$PATH
+
+
